@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shop  furniture</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+        <script src="/js/main.js" defer></script>
+    </head>
+    <body class="min-h-screen bg-slate-50">
+     <!-- header -->
+     <header class="md:py-4 bg-white shadow-sm ">
+        <section class="mx-auto p-4 container flex justify-between items-center">
+         <a href="index.html"><img src="./img/logo.svg"></a>
+         <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
+             &#9776;             
+           </button>
+         <div class="w-full max-w-xl relative flex md:hidden">
+             <input class="w-full border border-solid border-primary pl-3 py-3 pr3 rounded-l-md focus:outline-none hidden md:flex" id="search" name="search" placeholder="search">
+             <button class="bg-primary justify-center hidden md:flex pl-5 items-center  pr-5 text-white hover:text-primary hover:bg-white border border-primary rounded-r-md">Search</button>
+         </div>
+         <div class="hidden md:flex items-center">
+             <a class="flex flex-col items-center relative" href="#">
+                 <span class="bg-primary rounded-full flex justify-center items-center absolute right-1 -top-1 w-5 h-5 text-xs text-white">1</span>
+                <span class="text-2xl"><i class="fa-regular fa-heart"></i></span>
+                <span class="text-xs leading-3">Wishlist</span>
+             </a>
+             <a class="flex flex-col items-center relative pr-5 pl-5" href="#">
+                 <span class="bg-primary rounded-full flex justify-center items-center absolute right-2 -top-1 w-5 h-5 text-xs text-white">1</span>
+                <span class="text-2xl"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span class="text-xs leading-3">Cart</span>
+             </a>
+             <a class="flex flex-col items-center relative pr-5 pl-5" href="#">
+                <span class="text-2xl"><i class="fa-regular fa-user"></i></span>
+                <span class="text-xs leading-3">Cart</span>
+             </a>           
+         </div>
+        
+        </section>
+        <section id="mobile-menu" class="absolute top-[68px] bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
+         <button class="text-5xl self-end px-6 py-3 text-white">
+             &times;
+         </button>
+         <nav class="flex flex-col min-h-screen items-center py-4 text-white text-sm" aria-label="mobile">
+             <a href="#hero" class="w-full text-center py-2 hover:opacity-40">Home</a>
+             <a href="#rocket" class="w-full text-center py-2 hover:opacity-40">Rocket</a>
+             <a href="#testimonials" class="w-full text-center py-2 hover:opacity-40">Testimonials</a>
+             <a href="#contacts" class="w-full text-center py-2 hover:opacity-40">Contact</a>
+             <a href="#footer" class="w-full text-center py-2 hover:opacity-40">Legal</a>
+         </nav>
+     </section>  
+     </header>
+     <!-- ./header -->
+     <!-- navbar -->
+     <nav class="bg-gray sticky top-0 z-10">     
+         <div class="container mx-auto hidden md:flex text-white text-sm">
+             <div class="bg-primary text-white pl-5 pr-5 flex items-center">
+                 <i class="fa-solid fa-bars mr-3"></i>All categories
+             </div>
+             <div class="flex justify-between pl-10 pt-6 pb-6 flex-auto">
+                 <div class="flex justify-between">
+                     <a href="#" class="pr-5 hover:underline">Home</a>
+                     <a href="product.html" class="pr-5 hover:underline">Shop</a>
+                     <a href="#" class="pr-5 hover:underline">About us</a>
+                     <a href="#" class="pr-5 hover:underline">Contact us</a>
+                 </div>
+                 <div><a href="#">Login</a></div>
+             </div>
+         </div>
+     </nav>
+     <!-- ./navbar -->
+     <main class="mx-auto">
+            <!-- /breadcrum-->
+            <div class="container py-6 flex text-slate-500 text-sm gap-3">
+                <a href="../index.html">Home</a>
+                <span class="text-xs flex items-center"><i class="fa-solid fa-chevron-right"></i></span>
+                <a href="">Sofa</a>
+                <span class="text-xs flex items-center"><i class="fa-solid fa-chevron-right"></i></span>
+                <a href="" class="font-medium">Italian shape sofa</a>
+            </div>
+            <!-- ./breadcrum-->
+            <!-- /product detail-->
+            <div class="container grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <img src="./img/products/product1.jpg" alt="" class="w-full">
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h2 class="uppercase text-black text-md text-3xl">Italian shape sofa</h2>
+                    <div class="flex items-center text-primary gap-3">
+                        <div class="flex gap-1">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-gray">(150 reviews)</div>
+                    </div>
+                    <div class="font-semibold flex gap-3">
+                        <div class="text-black">Availabilify:</div>
+                        <div class="text-green-500">In stock</div>
+                    </div>
+                    <div class="font-semibold flex gap-3">
+                        <div class="text-black font-semibold ">Brand:</div>
+                        <div class="text-gray">Apex</div>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="text-black">Brand:</div>
+                        <div class="text-gray">Apex</div>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="text-black font-semibold ">category:</div>
+                        <div class="text-gray">Sofa</div>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="text-black font-semibold ">SKU:</div>
+                        <div class="text-gray">BE45VGRT</div>
+                    </div>
+                    <div class="flex gap-3 items-baseline">
+                        <div class="font-semibold text-red text-2xl text-primary">$45.00</div>
+                        <div class="text-md text-gray line-through">$55.00</div>
+                    </div>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eius eum reprehenderit dolore vel mollitia optio consequatur hic asperiores inventore suscipit, velit consequuntur, voluptate doloremque iure necessitatibus adipisci magnam porro.</div>
+                    <div class="flex flex-col">
+                        <div class="uppercase mb-2">size</div>
+                        <div class="flex gap-3">
+                            <span class="border border-gray p-1 w-6 h-6 text-xs flex justify-center items-center">XS</span>
+                            <span class="border border-gray p-1 w-6 h-6 text-xs flex justify-center items-center">S</span>
+                            <span class="border border-gray p-1 w-6 h-6 text-xs flex justify-center items-center">M</span>
+                            <span class="border border-gray p-1 w-6 h-6 text-xs flex justify-center items-center">L</span>
+                            <span class="border border-gray p-1 w-6 h-6 text-xs flex justify-center items-center">XL</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="uppercase mb-2">color</div>
+                        <div class="flex gap-3">
+                            <span class="border border-gray w-6 h-6 bg-primary"></span>
+                            <span class="border border-gray w-6 h-6 bg-black"></span>
+                            <span class="border border-gray w-6 h-6 bg-white"></span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="uppercase mb-2">quanity</div>
+                        <div class="border border-black flex divide-x devide-black w-max">
+                            <div class="w-8 h-8 flex justify-center items-center">-</div>
+                            <div class="w-8 h-8 flex justify-center items-center">4</div>
+                            <div class="w-8 h-8 flex justify-center items-center">+</div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 mt-5">
+                        <a class="bg-primary py-2 px-6 flex gap-3 items-center text-white uppercase border-primary border rounded hover:bg-transparent  hover:text-primary cursor-pointer">
+                            <span class="text-sm"><i class="fa-solid fa-bag-shopping"></i></span>add to cart
+                        </a>
+                        <a class="border border-gray py-2 px-6 flex gap-3 items-center text-gray uppercase hover:text-primary cursor-pointer hover:border-primary">
+                            <span class="text-sm"><i class="fa-solid fa-heart"></i></span>wishlist
+                        </a>
+                    </div>
+                    <div class="border-t border-gray pt-5 mt-5 flex gap-5">
+                        <a href="#" class="border border-gray rounded-full h-8 w-8 flex justify-center items-center">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="border border-gray rounded-full h-8 w-8 flex justify-center items-center">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="border border-gray rounded-full h-8 w-8 flex justify-center items-center">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container flex flex-col">
+                <h3 class="font-semibold pb-7 border-b border-gray mt-7">Product detail</h3>
+                <div class="pt-7 sm:w-3/5">
+                    <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus deleniti natus dolore cum maiores suscipit optio itaque voluptatibus veritatis tempora iste facilis non aut sapiente dolor quisquam, ex ab.                   
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quae accusantium voluptatem blanditiis sapiente voluptatum. Autem ab, dolorum assumenda earum veniam eius illo fugiat possimus illum dolor totam, ducimus excepturi.                   
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quia modi ut expedita! Iure molestiae labore cumque nobis quasi fuga, quibusdam rem? Temporibus consectetur corrupti rerum veritatis numquam labore amet.
+                    </div>  
+                    <table class="table-auto w-full text-left text-sm mt-6 border-collapse">
+                        <tbody>
+                            <tr>
+                                <th class="py-2 px-4 border-gray border w-40 font-medium">Color</th>
+                                <th class="py-2 px-4 border-gray border ">Blank, Brown, Red</th>
+                            </tr>
+                            <tr>
+                                <th class="py-2 px-4 border-gray border w-40 font-medium">Material</th>
+                                <th class="py-2 px-4 border-gray border ">Latex</th>
+                            </tr>
+                            <tr>
+                                <th class="py-2 px-4 border-gray border w-40 font-medium">Weight</th>
+                                <th class="py-2 px-4 border-gray border ">55kg</th>
+                            </tr>
+                            
+                        </tbody>
+                    </table>              
+                </div>
+            </div>
+            <!-- ./product detail-->
+            <!-- /related products-->
+            <div class="container py-8">
+                <h2 class="text-2xl font-medium uppercase mb-6 text-gray">related products</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="bg-white shadow rounded overflow-hidden group">
+                        <div class="relative">
+                            <img src="./img/products/product1.jpg" alt="product-1" class="w-full">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                                <a class="bg-primary h-12 w-12 rounded-ful text-white flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                                <a class="bg-primary h-12 w-12 rounded-ful text-white flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="py-3 px-4 flex flex-col">
+                            <a href="#">
+                                <h4 class="uppercase font-medium text-xl mb-2 text-gray hover:text-primary">Sofa chair</h4>
+                            </a>
+                            <div class="flex gap-4 items-center">
+                                <div class="text-primary font-bold text-xl">$45.00</div>
+                                <div class="text-slate-400 text-sm line-through">$55.00</div>
+                            </div>
+                        </div>
+                        <a href="#" class="bg-primary py-2 flex justify-center items-center border border-primary text-white hover:text-primary hover:bg-transparent ">Add to cart</a>
+                    </div>
+                    <div class="bg-white shadow rounded overflow-hidden group">
+                        <div class="relative">
+                            <img src="./img/products/product2.jpg" alt="product2" class="w-full">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                                <a class="bg-primary h-12 w-12 rounded-ful text-white flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                                <a class="bg-primary h-12 w-12 rounded-ful text-white flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="py-3 px-4 flex flex-col">
+                            <a href="#">
+                                <h4 class="uppercase font-medium text-xl mb-2 text-gray hover:text-primary">Sofa chair</h4>
+                            </a>
+                            <div class="flex gap-4 items-center">
+                                <div class="text-primary font-bold text-xl">$45.00</div>
+                                <div class="text-slate-400 text-sm line-through">$55.00</div>
+                            </div>
+                        </div>
+                        <a href="#" class="bg-primary py-2 flex justify-center items-center border border-primary text-white hover:text-primary hover:bg-transparent ">Add to cart</a>
+                    </div>
+                    <div class="bg-white shadow rounded overflow-hidden group">
+                        <div class="relative">
+                            <img src="./img/products/product3.jpg" alt="product-3" class="w-full">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                                <a class="bg-primary h-12 w-12 rounded-ful text-white flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                                <a class="bg-primary h-12 w-12 rounded-ful text-white flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="py-3 px-4 flex flex-col">
+                            <a href="#">
+                                <h4 class="uppercase font-medium text-xl mb-2 text-gray hover:text-primary">Sofa chair</h4>
+                            </a>
+                            <div class="flex gap-4 items-center">
+                                <div class="text-primary font-bold text-xl">$45.00</div>
+                                <div class="text-slate-400 text-sm line-through">$55.00</div>
+                            </div>
+                        </div>
+                        <a href="#" class="bg-primary py-2 flex justify-center items-center border border-primary text-white hover:text-primary hover:bg-transparent ">Add to cart</a>
+                    </div>
+                    <div class="bg-white shadow rounded overflow-hidden group">
+                        <div class="relative">
+                            <img src="./img/products/product4.jpg" alt="product-4" class="w-full">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                                <a class="bg-primary h-12 w-12 rounded-ful text-white flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                                <a class="bg-primary h-12 w-12 rounded-ful text-white flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="py-3 px-4 flex flex-col">
+                            <a href="#">
+                                <h4 class="uppercase font-medium text-xl mb-2 text-gray hover:text-primary">Sofa chair</h4>
+                            </a>
+                            <div class="flex gap-4 items-center">
+                                <div class="text-primary font-bold text-xl">$45.00</div>
+                                <div class="text-slate-400 text-sm line-through">$55.00</div>
+                            </div>
+                        </div>
+                        <a href="#" class="bg-primary py-2 flex justify-center items-center border border-primary text-white hover:text-primary hover:bg-transparent ">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./related products-->
+             <!-- footer -->
+    <footer id="footer" class="py-6 md:py-16 border-t border-slate-400">
+        <div class="container">
+            <div class="grid grid-cols-1 ">
+                <div class="col-span-1 space-y-4">
+                    <a href="#"><img src="./img/logo.svg" alt="logo" ></a>
+                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, hic? </p>
+                </div>  
+                <div class=""></div>       
+            </div>
+            <div class="grid grid-cols-2 md:flex justify-between mt-4">
+                <div class="mt-3">
+                    <h3 class="uppercase text-md font-semibold text-slate-400 tracking-wider">solution</h3>
+                    <div class="flex flex-col">
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >Marketing</a>
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >Analitycs</a>
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >Commerce</a>
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >Insights</a>
+                    </div>              
+                </div>
+                <div class="mt-3">
+                    <h3 class="uppercase text-md font-semibold text-slate-400 tracking-wider">solution</h3>
+                    <div class="flex flex-col">
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >Marketing</a>
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >Analitycs</a>
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >Commerce</a>
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >Insights</a>
+                    </div>              
+                </div>
+                <div class="mt-3">
+                    <h3 class="uppercase text-md font-semibold text-slate-400 tracking-wider">Support</h3>
+                    <div class="flex flex-col">
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >Pricing</a>
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >Guides</a>
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >API Status</a>
+                    </div>              
+                </div>
+                <div class="mt-3">
+                    <h3 class="uppercase text-md font-semibold text-slate-400 tracking-wider">solution</h3>
+                    <div class="flex flex-col">
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >Marketing</a>
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >Analitycs</a>
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >Commerce</a>
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >Insights</a>
+                    </div>              
+                </div>
+                <div class="mt-3">
+                    <h3 class="uppercase text-md font-semibold text-slate-400 tracking-wider">Support</h3>
+                    <div class="flex flex-col">
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >Pricing</a>
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >Guides</a>
+                        <a href="#" class="text-slate-500 hover:text-primary text-sm py-2" >API Status</a>
+                    </div>              
+                </div>           
+            </div>
+        </div>        
+    </footer>
+    <!-- ./footer -->
+        </main>
+    </body>
+</html>
